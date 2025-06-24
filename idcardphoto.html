@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Personal Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+      background: #fdfbfb;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin: 60px auto; /* Increased gap between sections */
+      max-width: 900px;
+      background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    /* Home Section */
+    #home {
+      background: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+      text-align: center;
+      margin: 0 auto 60px auto; /* space below home */
+      max-width: none; /* full width */
+      border-radius: 0;
+      box-shadow: none;
+      background-attachment: fixed;
+    }
+
+    #home h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    #home p {
+      font-size: 2rem;
+      font-weight: 600;
+      font-family: 'Brush Script MT', cursive;
+      margin-top: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    }
+
+    /* About Section Image */
+    #about img {
+      width: 250px;
+      height: 250px;
+      border-radius: 15px;
+      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    #about p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    /* Skills Section */
+    #skills ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 400px;
+      text-align: left;
+    }
+
+    #skills ul li {
+      font-size: 1.2rem;
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Projects Section */
+    #projects div {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    #projects h3 {
+      margin-bottom: 10px;
+      color: #00bcd4;
+    }
+
+    /* Contact Section */
+    form {
+      max-width: 400px;
+      margin: 20px auto 0;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+
+    input, textarea {
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    button {
+      padding: 12px;
+      border: none;
+      background-color: #00bcd4;
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #0097a7;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      #home h1 {
+        font-size: 2.5rem;
+      }
+      #home p {
+        font-size: 1.2rem;
+      }
+      #about img {
+        width: 180px;
+        height: 180px;
+      }
+      #skills ul {
+        max-width: 100%;
+      }
+      form {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header with Navigation -->
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+ <!-- Home Section -->
+<section id="home">
+  <h1 style="color: peachpuff;">Hello, I'm Tejashwini Dathurka</h1>
+  <p style="color: peachpuff;">Welcome to my personal portfolio website</p>
+</section>
+
+
+
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://i.ibb.co/jkWTxv98/TEJU.jpg" alt="Tejashwini Dathurka">
+    <p>I am a student passionate about web development. I love building websites and learning new technologies. This portfolio showcases my skills and interests.</p>
+    <p><strong>Name:</strong> Tejashwini Dathurka</p>
+    <p><strong>Gender:</strong> Female</p>
+    <p><strong>Studying at:</strong> Aurora University</p>
+    <p><strong>Mobile:</strong> 8142169981</p>
+    <p><strong>Email:</strong> <a href="mailto:tejashwini.dathurka@aurora.edu.in">tejashwini.dathurka@aurora.edu.in</a></p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>As a student, I am at the beginning of my journey in web development.</p>
+    <p>I am currently learning:</p>
+    <ul>
+      <li>Basic HTML – creating simple web pages</li>
+      <li>Basic CSS – styling text and layouts</li>
+      <li>Basic Programming Concepts</li>
+    </ul>
+    <p>I look forward to building real-world projects and improving my skills over time.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <p>I did these projects as part of my learning and exploration in programming and web development:</p>
+    <div>
+      <h3>1. Simple Banking System</h3>
+      <p>This project simulates basic banking operations like deposit, withdrawal, and balance inquiry using C programming. It helped me understand file handling and user-defined functions.</p>
+    </div>
+    <div>
+      <h3>2. Personal Portfolio Website</h3>
+      <p>This website is one of my first web projects using HTML and CSS. It includes my introduction, skills, projects, and contact information.</p>
+    </div>
+    <div>
+      <h3>3. Electronic Voting Machine</h3>
+      <p>This project demonstrates how votes can be securely cast and counted using C programming. I used conditionals, loops, and arrays in this implementation.</p>
+    </div>
+    <div>
+      <h3>4. Event Website Project</h3>
+      <p>I created a simple event website to showcase event details, agenda, and registration form. It improved my HTML/CSS layout and styling skills.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="event.preventDefault(); alert('Message sent!');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tejashwini Dathurka. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
