@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>QUIZ-A-THAN Poster</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1d1f2f, #313258);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: #fff;
+    }
+
+    .poster {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      animation: pulse 2s infinite ease-in-out;
+      border: 2px solid #00ffd5;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      color: #00ffd5;
+      margin-bottom: 10px;
+      text-shadow: 0 0 8px #00ffd5;
+    }
+
+    .tagline {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #d2d2ff;
+    }
+
+    .details {
+      font-size: 16px;
+      line-height: 1.6;
+      background: rgba(0,0,0,0.2);
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #00ffd5;
+    }
+
+    .register {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .register a {
+      color: #000;
+      background: #00ffd5;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .register a:hover {
+      background: #00c9a7;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        box-shadow: 0 0 10px #00ffd5, 0 0 20px #00ffd5;
+      }
+      50% {
+        box-shadow: 0 0 20px #00ffd5, 0 0 40px #00ffd5;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="logo">QUIZ-A-THAN</div>
+    <div class="tagline">An Online Hackathon For All!</div>
+    <div class="details">
+      📍 Everyone can participate<br>
+      📅 Organized weekly<br>
+      🏆 Prizes worth ₹5000<br>
+      📜 Participation certificate for all<br>
+      🚀 And much more...
+    </div>
+    <div class="register">
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWK5ff21b32TrE3AX0uv9cXzoAKUMes-uRzNu3WUziYjpbZw/viewform?usp=header" target="_blank">
+        Register Now
+      </a>
+    </div>
+  </div>
+</body>
+</html>
